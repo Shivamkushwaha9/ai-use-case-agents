@@ -31,4 +31,4 @@ def generate_proposal():
 
 if __name__ == '__main__':
     # Run the Flask app on port 5000 by default
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
